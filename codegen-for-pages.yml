@@ -1,0 +1,11 @@
+overwrite: true
+schema: https://todolist-back-end.vercel.app/api/graphql
+documents: ./src/graphql/**/*.graphql
+generates:
+  src/generated/pages/index.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations":
+          prepend: 'import { GetHelloQuery } from "../../types";'
+      - "typescript-react-apollo":
+          withHooks: true

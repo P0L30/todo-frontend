@@ -1,0 +1,17 @@
+query Todos {
+  todos {
+    completed
+    group
+    id
+    text
+  }
+}
+mutation AddTodo($text: String!, $group: String!) {
+  addTodo(text: $text, group: $group) {
+    completed
+    group
+    id
+    text
+  }
+}
+
