@@ -1,5 +1,5 @@
 overwrite: true
-schema: https://todolist-back-end.vercel.app/api/graphql
+schema: https://todo-backend-amber.vercel.app/api/graphql
 documents: ./src/graphql/**/*.graphql
 generates:
   src/generated/pages/index.ts:
