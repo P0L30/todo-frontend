@@ -8,7 +8,7 @@ import {
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "https://todolist-back-end.vercel.app/api/graphql",
+    uri: "https://todo-backend-amber.vercel.app/api/graphql",
   }),
   cache: new InMemoryCache(),
 });
